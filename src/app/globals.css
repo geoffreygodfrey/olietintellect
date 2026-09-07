@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-merriweather);
+  --font-card: var(--font-merriweather);
+  --font-eyebrow: var(--font-nunito);
+
+  --color-ink: #0b1320;
+  --color-ink-soft: #132030;
+  --color-ink-raised: #1b2b40;
+  --color-ink-text: #e9edf2;
+  --color-paper: #f6f3ec;
+  --color-paper-deep: #ece6d8;
+  --color-cream: #fbfaf6;
+  --color-brass: #b9904f;
+  --color-brass-soft: #d6b678;
+  --color-brass-pale: #efe3c8;
+  --color-brand: #3271c9;
+  --color-brand-soft: #5c8ee0;
+  --color-brand-pale: #dbe8fb;
+  --color-body: #26313c;
+  --color-slate: #5f6e7d;
+  --color-mist: #9aa8b8;
+  --color-line: #e2dbc9;
+  --color-linedark: #24384f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-body);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-brass);
+    color: var(--color-ink);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), ui-serif, Georgia, serif;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility card-headline {
+  font-family: var(--font-merriweather), ui-serif, Georgia, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+@utility card-subtext {
+  font-family: var(--font-merriweather), ui-serif, Georgia, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+}
+
+@utility hairline {
+  border-color: var(--color-line);
+}
+
+@utility grid-paper {
+  background-image:
+    linear-gradient(to right, rgb(11 19 32 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(11 19 32 / 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@utility grid-ink {
+  background-image:
+    linear-gradient(to right, rgb(246 243 236 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(246 243 236 / 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
