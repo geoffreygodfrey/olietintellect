@@ -69,8 +69,10 @@ export default async function PublicationPage({ params }: { params: Promise<{ sl
 
                 <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 border-y border-line py-5 text-sm">
                   <span>
-                    <span className="text-slate">List price — </span>
-                    <span className="font-semibold text-ink">{formatPrice(book.price, book.currency)}</span>
+                    <span className="text-slate">{book.price ? "List price — " : "Pricing — "}</span>
+                    <span className="font-semibold text-ink">
+                      {book.price ? formatPrice(book.price, book.currency) : "Price on request"}
+                    </span>
                   </span>
                   {book.pages && (
                     <span>
@@ -104,53 +106,38 @@ export default async function PublicationPage({ params }: { params: Promise<{ sl
       <section className="bg-cream py-16 sm:py-24">
         <Container>
           <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <h2 className="font-display text-2xl font-semibold tracking-tight text-ink">Contents</h2>
-              <ol className="mt-6 space-y-0 divide-y divide-line border-y border-line">
-                {book.contents.map((item, i) => (
-                  <li key={item} className="flex items-baseline gap-5 py-4">
-                    <span className="font-display text-sm font-semibold text-brass">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-[15px] font-medium text-body">{item}</span>
-                  </li>
-                ))}
-              </ol>
+            <div className="border border-line bg-paper p-8 sm:p-10">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-brand">About this series</p>
+              <p className="mt-4 text-[15px] leading-relaxed text-slate">
+                Every Oliet Press title is written by the practicing team and grounded in real advisory work — not by
+                authors who advise nothing and write about everything. Print editions are produced to standard;
+                e-books are DRM-free and readable on any device.
+              </p>
             </div>
-            <div className="flex flex-col items-start gap-8">
-              <div className="border border-line bg-paper p-8 sm:p-10">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-brand">About this series</p>
-                <p className="mt-4 text-[15px] leading-relaxed text-slate">
-                  Every Oliet Press title is written by the practicing team and grounded in real advisory work — not
-                  by authors who advise nothing and write about everything. Print editions are produced to standard;
-                  e-books are DRM-free and readable on any device.
-                </p>
-              </div>
 
-              {related.length > 0 && (
-                <div className="w-full">
-                  <h3 className="font-display text-xl font-semibold tracking-tight text-ink">You may also read</h3>
-                  <div className="mt-6 grid gap-8 sm:grid-cols-2">
-                    {related.map((book) => (
-                      <div key={book._id} className="group">
-                        <Link href={`/publications/${book.slug}`}>
-                          <BookCover
-                            title={book.title}
-                            author={book.author}
-                            cover={book.cover}
-                            compact
-                            className="max-w-[180px]"
-                          />
-                        </Link>
-                        <h4 className="mt-4 font-display text-lg font-semibold leading-snug tracking-tight text-ink transition-colors group-hover:text-brass">
-                          <Link href={`/publications/${book.slug}`}>{book.title}</Link>
-                        </h4>
-                      </div>
-                    ))}
-                  </div>
+            {related.length > 0 && (
+              <div className="w-full">
+                <h2 className="font-display text-xl font-semibold tracking-tight text-ink">You may also read</h2>
+                <div className="mt-6 grid gap-8 sm:grid-cols-2">
+                  {related.map((book) => (
+                    <div key={book._id} className="group">
+                      <Link href={`/publications/${book.slug}`}>
+                        <BookCover
+                          title={book.title}
+                          author={book.author}
+                          cover={book.cover}
+                          compact
+                          className="max-w-[180px]"
+                        />
+                      </Link>
+                      <h3 className="mt-4 font-display text-lg font-semibold leading-snug tracking-tight text-ink transition-colors group-hover:text-brass">
+                        <Link href={`/publications/${book.slug}`}>{book.title}</Link>
+                      </h3>
+                    </div>
+                  ))}
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </Container>
       </section>

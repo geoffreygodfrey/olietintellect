@@ -60,7 +60,7 @@ export function ProductExplorer({ products }: { products: Product[] }) {
                   </h3>
                 </div>
                 <span className="shrink-0 text-sm font-semibold text-body">
-                  {formatPrice(product.price, product.currency)}
+                  {product.price ? formatPrice(product.price, product.currency) : "Price on request"}
                 </span>
               </div>
               <span className="mt-2 inline-flex items-center gap-1.5 text-sm font-semibold text-slate transition-colors group-hover:text-brand">

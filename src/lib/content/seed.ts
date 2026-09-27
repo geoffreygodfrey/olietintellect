@@ -270,7 +270,7 @@ export const publicationsSeed: Publication[] = [
       "Jehovah Rapha — the Lord who heals — is one of the earliest names by which God is known in scripture. This book walks the reader through what that name actually promises: healing that begins where the pain began, that reaches beyond the body into spirit and memory, and that makes whole the people and households broken in ways no prescription can reach. Written for the weary, and for those who want to understand what faith says to suffering.",
     author: "Diouf I. Mhlanga",
     pages: 208,
-    price: 999,
+    price: 1500,
     currency: "INR",
     featured: true,
     cover: {
@@ -279,20 +279,12 @@ export const publicationsSeed: Publication[] = [
       pattern: "sunburst",
       image: "/jehovahraphacover.webp",
     },
-    contents: [
-      "The name that begins with a wound",
-      "Healing for the body",
-      "Healing for the heart",
-      "Healing for households",
-      "The long restoration",
-      "Living healed",
-    ],
   },
   {
     _id: "pub-eureka",
     title: "Eureka",
     slug: "eureka",
-    category: "education",
+    category: "religious",
     format: ["Print", "E-book"],
     status: "available",
     excerpt:
@@ -301,27 +293,18 @@ export const publicationsSeed: Publication[] = [
       "Every breakthrough is a moment of finding. Eureka is a meditation on the mechanics of that moment: the preparation that precedes it, the patience that surrounds it, and the habit of attention that invites it to return. A book for thinkers, builders and students who want to understand how insight actually arrives.",
     author: "Diouf I. Mhlanga",
     pages: 172,
-    price: 999,
-    currency: "INR",
     featured: true,
     cover: {
       background: "#1d1a2b",
       accent: "#d6b678",
       pattern: "waves",
     },
-    contents: [
-      "The anatomy of the moment",
-      "Preparation that makes room",
-      "The discipline of attention",
-      "Patience and the half-found",
-      "Recognising what you have found",
-    ],
   },
   {
     _id: "pub-noise",
     title: "Be Noise To Your Self",
     slug: "be-noise-to-your-self",
-    category: "religious",
+    category: "education",
     format: ["Print", "E-book"],
     status: "available",
     excerpt:
@@ -330,21 +313,12 @@ export const publicationsSeed: Publication[] = [
       "The loudest obstacle to growth is often the voice inside that agrees too easily with everything you already are. Be Noise To Your Self is an invitation to interrupt that voice — to disturb your own assumptions, question the self that has made peace with mediocrity, and build an inner life that refuses to settle for the merely comfortable.",
     author: "Diouf I. Mhlanga",
     pages: 184,
-    price: 999,
-    currency: "INR",
     featured: true,
     cover: {
       background: "#2b1a10",
       accent: "#e0b878",
       pattern: "dots",
     },
-    contents: [
-      "The noise that keeps you safe",
-      "Interrupting the inner editor",
-      "Disturbing comfortable beliefs",
-      "Listening past your own echo",
-      "Becoming a disturbance for good",
-    ],
   },
   {
     _id: "pub-father",
@@ -359,21 +333,12 @@ export const publicationsSeed: Publication[] = [
       "Most of what we know of building character is caught from someone further along the road. This book is about what it means to learn from the Father: the patience of the apprenticeship, the hours when nothing seems to move, and the formation that happens when you place yourself under a teacher more concerned with your becoming than your performance.",
     author: "Diouf I. Mhlanga",
     pages: 192,
-    price: 999,
-    currency: "INR",
     featured: true,
     cover: {
       background: "#0e241c",
       accent: "#d6b678",
       pattern: "grid",
     },
-    contents: [
-      "Sitting under a teacher",
-      "The patience of the apprenticeship",
-      "Learning from correction",
-      "Imitation that becomes character",
-      "Growing into what you were taught",
-    ],
   },
   {
     _id: "pub-spirit",
@@ -388,21 +353,12 @@ export const publicationsSeed: Publication[] = [
       "Faith has a mother tongue, spoken in prayer, in worship and in the quiet certainties beneath our words. Language Of The Spirit is a study of that interior language: how it is learned, how it is spoken when words fail, and how it attunes a person to hear what the world cannot. A work for those who want their devotional life to be real rather than routine.",
     author: "Diouf I. Mhlanga",
     pages: 210,
-    price: 999,
-    currency: "INR",
     featured: false,
     cover: {
       background: "#12293b",
       accent: "#c9a45c",
       pattern: "diagonal",
     },
-    contents: [
-      "A language older than words",
-      "Learning to pray",
-      "Worship as speech and silence",
-      "When words fail",
-      "Hearing in the language of the spirit",
-    ],
   },
   {
     _id: "pub-desire",
@@ -417,21 +373,12 @@ export const publicationsSeed: Publication[] = [
       "Every life is steered by its desires. The Desire Of My Heart looks honestly at the longing that sits underneath ambition, restlessness and fear — and asks what it means to bring that longing before God rather than bury it or feed it. A patient book about wanting well.",
     author: "Diouf I. Mhlanga",
     pages: 196,
-    price: 999,
-    currency: "INR",
     featured: false,
     cover: {
       background: "#241d12",
       accent: "#e0b878",
       pattern: "sunburst",
     },
-    contents: [
-      "Desire as native language",
-      "Reading your own longing",
-      "Ambition, restlessness and fear",
-      "Bringing desire before God",
-      "Wanting well",
-    ],
   },
   {
     _id: "pub-care",
@@ -446,21 +393,12 @@ export const publicationsSeed: Publication[] = [
       "We care about more than we can carry, and about many things that will not matter. Why Do I Care is an inquiry into the discipline of concern: how to tell what deserves your heart, how to stop spending it on what does not, and how to care well — deeply, deliberately, without being crushed.",
     author: "Diouf I. Mhlanga",
     pages: 168,
-    price: 999,
-    currency: "INR",
     featured: false,
     cover: {
       background: "#0f2b33",
       accent: "#c9a45c",
       pattern: "grid",
     },
-    contents: [
-      "The economy of concern",
-      "What deserves your heart",
-      "Caring without being crushed",
-      "The discipline of indifference",
-      "Caring well",
-    ],
   },
   {
     _id: "pub-wise",
@@ -475,21 +413,12 @@ export const publicationsSeed: Publication[] = [
       "Wisdom is best carried in small, durable sentences. Words Of The Wise gathers the kind of counsel that survives translation and time: on money held loosely, speech that builds, work done honestly and character kept intact. Each short chapter lives long enough to become a habit rather than a note.",
     author: "Diouf I. Mhlanga",
     pages: 224,
-    price: 999,
-    currency: "INR",
     featured: false,
     cover: {
       background: "#1d1a2b",
       accent: "#d6b678",
       pattern: "dots",
     },
-    contents: [
-      "On money held loosely",
-      "On speech that builds",
-      "On honest work",
-      "On friends and counsel",
-      "On character kept intact",
-    ],
   },
 ];
 
@@ -913,10 +842,10 @@ export const productsSeed: Product[] = [
     slug: "jehovah-rapha",
     type: "book",
     category: "books",
-    price: 999,
+    price: 1500,
     currency: "INR",
     description:
-      "The print and digital edition of our title on healing and restoration. Priced at ₹999 for readers in India and abroad.",
+      "The print and digital edition of our title on healing and restoration. Priced at ₹1,500 for readers in India and abroad.",
     cover: {
       background: "#16202e",
       accent: "#c9a45c",
@@ -931,8 +860,6 @@ export const productsSeed: Product[] = [
     slug: "eureka",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of Eureka, on the moment of finding and the habits that invite insight.",
     cover: {
@@ -948,8 +875,6 @@ export const productsSeed: Product[] = [
     slug: "be-noise-to-your-self",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of Be Noise To Your Self, a call to disturb the comfortable voices within.",
     cover: {
@@ -965,8 +890,6 @@ export const productsSeed: Product[] = [
     slug: "learn-from-the-father",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of Learn From The Father, on discipline, patience and the long apprenticeship.",
     cover: {
@@ -982,8 +905,6 @@ export const productsSeed: Product[] = [
     slug: "language-of-the-spirit",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of Language Of The Spirit, on prayer, worship and the interior language of faith.",
     cover: {
@@ -999,8 +920,6 @@ export const productsSeed: Product[] = [
     slug: "the-desire-of-my-heart",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of The Desire Of My Heart, on the longings that shape a life.",
     cover: {
@@ -1016,8 +935,6 @@ export const productsSeed: Product[] = [
     slug: "why-do-i-care",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of Why Do I Care, an inquiry into the discipline of concern.",
     cover: {
@@ -1033,8 +950,6 @@ export const productsSeed: Product[] = [
     slug: "words-of-the-wise",
     type: "book",
     category: "books",
-    price: 999,
-    currency: "INR",
     description:
       "The print and digital edition of Words Of The Wise, on money, speech, work and character.",
     cover: {
@@ -1067,8 +982,6 @@ export const productsSeed: Product[] = [
     slug: "build-what-matters-t-shirt",
     type: "apparel",
     category: "apparel",
-    price: 29,
-    currency: "USD",
     description:
       "Natural-colour heavyweight tee with our wordmark in brass. Built to outlast trends, in the same way as the things it celebrates.",
     swatch: "#f2e8d5",
@@ -1083,8 +996,6 @@ export const productsSeed: Product[] = [
     slug: "oliet-intellect-cap",
     type: "apparel",
     category: "apparel",
-    price: 24,
-    currency: "USD",
     description:
       "A six-panel cap in ink with a tonal brass monogram. Understated, serious, and comfortable enough for long days on site or at the desk.",
     swatch: "#0b1320",
@@ -1098,8 +1009,6 @@ export const productsSeed: Product[] = [
     slug: "we-build-we-publish-tote",
     type: "apparel",
     category: "apparel",
-    price: 18,
-    currency: "USD",
     description:
       "A heavy-canvas tote carrying the Oliet Intellect line. Room enough for a laptop, two books and a serious lunch.",
     swatch: "#f6f3ec",

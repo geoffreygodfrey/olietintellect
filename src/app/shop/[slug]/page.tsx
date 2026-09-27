@@ -61,7 +61,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                   {product.title}
                 </h1>
                 <p className="mt-4 font-display text-2xl font-semibold text-ink">
-                  {formatPrice(product.price, product.currency)}
+                  {product.price ? formatPrice(product.price, product.currency) : "Price on request"}
                 </p>
 
                 <p className="mt-6 text-base leading-relaxed text-slate sm:text-lg">{product.description}</p>
@@ -86,7 +86,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                       {item.title}
                     </h3>
                     <span className="shrink-0 text-sm font-semibold text-body">
-                      {formatPrice(item.price, item.currency)}
+                      {item.price ? formatPrice(item.price, item.currency) : "Price on request"}
                     </span>
                   </div>
                 </Link>

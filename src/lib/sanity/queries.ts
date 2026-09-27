@@ -72,8 +72,7 @@ export const publicationsQuery = groq`
     price,
     currency,
     featured,
-    cover,
-    contents
+    cover
   }
 `;
 
@@ -92,8 +91,7 @@ export const publicationBySlugQuery = groq`
     price,
     currency,
     featured,
-    cover,
-    contents
+    cover
   }
 `;
 

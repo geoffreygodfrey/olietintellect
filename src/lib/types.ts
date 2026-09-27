@@ -80,11 +80,10 @@ export interface Publication {
   description: string;
   author: string;
   pages?: number;
-  price: number;
-  currency: string;
+  price?: number;
+  currency?: string;
   featured?: boolean;
   cover: CoverStyle;
-  contents: string[];
 }
 
 export type BlockStyle = "normal" | "h2" | "h3" | "quote" | "bullets";
@@ -128,8 +127,8 @@ export interface Product {
   slug: string;
   type: ProductType;
   category: ProductCategory;
-  price: number;
-  currency: string;
+  price?: number;
+  currency?: string;
   description: string;
   featured?: boolean;
   cover?: CoverStyle;
